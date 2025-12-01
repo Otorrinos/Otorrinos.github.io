@@ -1,0 +1,43 @@
+
+body { font-family: Arial, sans-serif; margin: 5px; }
+table { width: 100%; border-collapse: collapse; margin-top: 3px; table-layout: fixed; page-break-inside: avoid;}
+table, th,td { border: 1px solid black; white-space: nowrap; }
+th { padding: 2px; text-align: center; font-size: 10px; margin-top: 2px;}
+td { padding: 2px; text-align: center; font-size: 11px; margin-top: 2px;}
+#checklist { max-width: 800mm; margin: 0 auto; padding: 10 ; box-sizing: border-box; transform: scale(0.95); transform-origin: top left;}
+textarea{width: 95%; height: 15px; resize: none; font-size: 11px;font-family: Arial, sans-serif;white-space: pre-wrap;overflow: hidden; word-wrap: break-word;}
+.textarea-print{white-space: pre-wrap; word-break: break-word; border: 1px solid #ccc; padding: 2px; font-size: 10px;}
+.page-break {
+    page-break-before: always;
+}
+
+      /* Encabezado */
+.head .titulo{font-weight:bold; font-size:18px; text-align:center;}
+.head .info{font-size:10px; text-align:left;font-weight:bold; text-align: center;}
+.head img{display:block; max-width:180px; height:auto;} /* el td del logo se ajusta a la imagen */
+    
+    /* Fila de campos (2 columnas iguales) */
+.meta td{font-weight:bold;width: 50%;text-align:left;}
+.meta input[type="text"], .meta input[type="date"]{width:50%;}
+
+.firma {width: 100%;height: 50px;border: 1px solid #000;overflow: hidden;margin-top: 2px;display: flex;justify-content: center;align-items: center;}
+.firma-container{display: flex; gap: 20px; margin: 30px 0;}
+@media (max-width:768px){
+    .head .titulo { font-size: 16px; }
+    .head img { max-width: 130px; }
+    .meta input[type="text"], .meta input[type="date"] { width: 70%; font-size: 10px; }
+    .firma { height: 50px; }
+    :root { --celda: 35px; }
+}
+canvas {width:100%; height: 100%;cursor: crosshair; display: block; border: 1px solid #000}
+button { margin-top: 5px;color: #eff4f9; padding: 5px 20px; font-size: 16px; background: #122233;border-radius: 5px; cursor: pointer;transition: all 0.3s;text-decoration-color: aliceblue; }
+button:hover{background: #eff4f9;transform: translateY(-2px);}
+.botones {margin-top: 1px; display: flex; justify-content: center; gap:10px;}
+
+input[type = "checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: black;
+    cursor: pointer;
+}
+    
